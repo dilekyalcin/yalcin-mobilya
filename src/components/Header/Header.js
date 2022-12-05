@@ -24,7 +24,7 @@ const Header = () => {
   };
   return (
     <div>
-      <AppBar position="static" sx={{ backgroundColor: "black"}}>
+      <AppBar position="static" sx={{ backgroundColor: "#5bcca8"}}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
