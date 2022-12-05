@@ -1,12 +1,6 @@
 import * as React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
 import {
   Avatar,
-  Button,
-  CardActionArea,
   Divider,
   Grid,
   List,
@@ -16,13 +10,6 @@ import {
   ToggleButton,
   ToggleButtonGroup,
 } from "@mui/material";
-import mobilya from "../../assets/image/ewa-modern-koltuk-takımı.jpg";
-import mobilya1 from "../../assets/image/nita-modern-koltuk-takımı.jpeg";
-import mobilya2 from "../../assets/image/auro-koltuk-takımı.jpg";
-import mobilya3 from "../../assets/image/Bella-koltuk-takımı.jpeg";
-import mobilya4 from "../../assets/image/Capriss-koltuk-takımı.jpeg";
-import mobilya5 from "../../assets/image/lounge-koltuk-takimi.jpg";
-import mobilya6 from "../../assets/image/montego-koltuk-takımı.jpg";
 import ProductImage from "../../assets/image/productGeneralPhoto.jpg";
 import ChairIcon from "@mui/icons-material/Chair";
 import TableRestaurantIcon from "@mui/icons-material/TableRestaurant";
@@ -35,7 +22,7 @@ import mobilya8 from "../../assets/image/yemekmasası3.jpeg"
 import mobilya9 from "../../assets/image/yatakodası5.jpeg"
 import mobilya10 from "../../assets/image/tvünitesi6.jpeg"
 import mobilya11 from "../../assets/image/yemekmasası1.jpg"
-import { Carousel } from "react-responsive-carousel";
+
 const dataCategory = [
   {
     id: 1,
