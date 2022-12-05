@@ -10,9 +10,6 @@ import mobilya2 from "../assets/image/yemekmasası3.jpeg";
 import mobilya3 from "../assets/image/yemekmasası4.jpg";
 import mobilya4 from "../assets/image/yemekmasası5.jpg";
 import mobilya5 from "../assets/image/yemekmasası6.jpeg";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const data = [
   {
@@ -57,7 +54,6 @@ const data = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Incidunt molestiae pariatur nemo velit laudantium aliquam!",
     imagePath: mobilya5,
   },
-  
 ];
 
 const yemekMasalari = () => {

@@ -7,12 +7,14 @@ import Masa from './components/YemekMasalari';
 import TVunitesi from './components/TVunitesi';
 import YatakOdasi from './components/YatakOdasi';
 import { Route, Routes } from "react-router-dom";
+import NewItem from './components/NewItem/NewItem';
 
 function App() {
   return (
     <div className="App">
      <Header/>
      <Product/>
+     <NewItem />
      <Routes>
       <Route path="/KoltukTakimi" element={<Koltuk />}/>
       <Route path="/YemekMasalari" element={<Masa />}/>
