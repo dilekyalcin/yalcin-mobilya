@@ -57,67 +57,36 @@ const data = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Incidunt molestiae pariatur nemo velit laudantium aliquam!",
     imagePath: mobilya5,
   },
-  {
-    id: 7,
-    sofaName: "Lounge Yemek Masası",
-    sofaDesc:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Incidunt molestiae pariatur nemo velit laudantium aliquam!",
-    imagePath: mobilya4,
-  },
-  {
-    id: 8,
-    sofaName: "Lounge Yemek Masası",
-    sofaDesc:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Incidunt molestiae pariatur nemo velit laudantium aliquam!",
-    imagePath: mobilya4,
-  },
-  {
-    id: 9,
-    sofaName: "Lounge Yemek Masası",
-    sofaDesc:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Incidunt molestiae pariatur nemo velit laudantium aliquam!",
-    imagePath: mobilya4,
-  },
-  {
-    id: 10,
-    sofaName: "Lounge Yemek Masası",
-    sofaDesc:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Incidunt molestiae pariatur nemo velit laudantium aliquam!",
-    imagePath: mobilya4,
-  },
+  
 ];
 
 const yemekMasalari = () => {
   return (
     <div>
       <Grid container direction="row" spacing={2} sx={{ margin: "auto" }}>
-        <Grid item>
-          <OwlCarousel className="owl-theme" nav>
-            {data.map((item) => {
-              return (
-                <div className="item">
-                  <Card sx={{ width:"75%"}}>
-                    <CardActionArea>
-                      <CardMedia
-                        component="img"
-                        height="140"
-                        image={item.imagePath}
-                      />
-                      <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                          {item.sofaName}
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                          {item.sofaDesc}
-                        </Typography>
-                      </CardContent>
-                    </CardActionArea>
-                  </Card>
-                </div>
-              );
-            })}
-          </OwlCarousel>
-        </Grid>
+        {data.map((item) => {
+          return (
+            <Grid item md={3}>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image={item.imagePath}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {item.sofaName}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {item.sofaDesc}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
+          );
+        })}
       </Grid>
     </div>
   );
